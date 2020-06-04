@@ -1,0 +1,9 @@
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\bin\Debug\SystemyWizyjne.exe
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\bin\Debug\SystemyWizyjne.pdb
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.csprojAssemblyReference.cache
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.Form1.resources
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.Properties.Resources.resources
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.csproj.GenerateResource.cache
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.csproj.CoreCompileInputs.cache
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.exe
+D:\STUDIA - Inf PO\sem VI\Systemy wizyjne\Projekt\SystemyWizyjne\SystemyWizyjne\obj\Debug\SystemyWizyjne.pdb
