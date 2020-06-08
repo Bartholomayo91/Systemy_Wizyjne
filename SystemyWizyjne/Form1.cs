@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
@@ -320,8 +321,57 @@ namespace SystemyWizyjne
                     }
                     chart.Invalidate();
                     break;
+                    ///////////////////////////////////normalizacja histogramu//////////////////////
+                    case "Skalowanie":
+                    this.chart.Visible = false;
+                    this.process.Visible = false;
 
-                    
+                    this.label1.Visible = true;
+                    this.suwak2.Visible = true;
+                    int skala = suwak2.Value;
+                    int newWidth = zrodlo.Width*skala;
+                    int newHeight = zrodlo.Height*skala;
+
+
+                    //Nie rob nic wiecej jezeli obraz jest jeszcze niewczytany
+                    if (picture != null)
+                    {
+                        if (this.suwak2.Value > 0) { 
+                        picture.Image = ResizeImage(zrodlo, newWidth, newHeight);
+                        }
+                    }
+
+
+
+                    Bitmap ResizeImage(Image image, int width, int height)
+                    {
+                        var destRect = new Rectangle(0, 0, width, height);
+                        var destImage = new Bitmap(width, height);
+
+                        destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+                        using (var graphics = Graphics.FromImage(destImage))
+                        {
+                            graphics.CompositingMode = CompositingMode.SourceCopy;
+                            graphics.CompositingQuality = CompositingQuality.HighQuality;
+                            graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                            graphics.SmoothingMode = SmoothingMode.HighQuality;
+                            graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                            using (var wrapMode = new ImageAttributes())
+                            {
+                                wrapMode.SetWrapMode(WrapMode.TileFlipXY);
+                                graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                            }
+                        }
+                        picture.Width = width;
+                        picture.Height = height;
+                        return destImage;
+                    }
+
+                    break;
+
+    
             }
         
            

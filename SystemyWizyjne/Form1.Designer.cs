@@ -38,6 +38,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.suwak = new System.Windows.Forms.TrackBar();
+            this.suwak2 = new System.Windows.Forms.TrackBar();
             this.wykres = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.picture = new System.Windows.Forms.PictureBox();
          //   this.wynik = new System.Windows.Forms.PictureBox();
@@ -47,6 +48,7 @@
             this.process = new System.Windows.Forms.Button();
 
             ((System.ComponentModel.ISupportInitialize)(this.suwak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suwak2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wykres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
            // ((System.ComponentModel.ISupportInitialize)(this.wynik)).BeginInit();
@@ -73,6 +75,19 @@
             this.suwak.TickFrequency = 10;
             this.suwak.Visible = false;
             this.suwak.ValueChanged += new System.EventHandler(this.comboBox1_Click);
+            //
+            // suwak2
+            //
+            this.suwak2.LargeChange = 1;
+            this.suwak2.Location = new System.Drawing.Point(64, 50);
+            this.suwak2.Maximum = 4;
+            this.suwak2.Minimum = 1;
+            this.suwak2.Name = "suwak";
+            this.suwak2.Size = new System.Drawing.Size(318, 45);
+            this.suwak2.TabIndex = 3;
+            this.suwak2.TickFrequency = 1;
+            this.suwak2.Visible = false;
+            this.suwak2.ValueChanged += new System.EventHandler(this.comboBox1_Click);
             // 
             // wykres
             // 
@@ -237,13 +252,15 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.picture);
-           // this.Controls.Add(this.wykres);
+            // this.Controls.Add(this.wykres);
             this.Controls.Add(this.suwak);
-           // this.Controls.Add(this.label1);
+            this.Controls.Add(this.suwak2);
+            // this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(700, 300);
             this.Name = "Form1";
             this.Text = "Systemy Wizyjne";
             ((System.ComponentModel.ISupportInitialize)(this.suwak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suwak2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wykres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
@@ -267,6 +284,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar suwak;
+        private System.Windows.Forms.TrackBar suwak2;
         private System.Windows.Forms.DataVisualization.Charting.Chart wykres;
        // private System.Windows.Forms.PictureBox wynik;
     }
