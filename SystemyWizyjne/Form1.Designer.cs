@@ -78,10 +78,10 @@
             //
             // suwak2
             //
-            this.suwak2.LargeChange = 10;
+            this.suwak2.LargeChange = 1;
             this.suwak2.Location = new System.Drawing.Point(64, 50);
-            this.suwak2.Maximum = 20;
-            this.suwak2.Minimum = -20;
+            this.suwak2.Maximum = 4;
+            this.suwak2.Minimum = 1;
             this.suwak2.Name = "suwak";
             this.suwak2.Size = new System.Drawing.Size(318, 45);
             this.suwak2.TabIndex = 3;
